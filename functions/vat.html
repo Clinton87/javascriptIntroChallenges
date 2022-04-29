@@ -22,7 +22,6 @@
 
         <!-- Start of Script -->
         <script>
-            
             // VAT constant:
             const vat = 14;
             let percentage = 100;
@@ -34,9 +33,8 @@
             result = (answer * vat) / percentage;
             // log VAT out to consol, DOM, or alert
             console.log("The VAT of entered amount is R" + result);
-            alert("Your VAT amount is R" + result);
-            document.getElementById("app").innerHTML = "The VAT of entered amount is R" + result;
-
+            alert("The amount you entered was R" + answer + ". Your VAT amount is R" + result);
+            document.getElementById("app").innerHTML = "The amount you entered was R" + answer + ". The VAT of your entered amount is R" + result;
         </script>
         <!-- End of Script -->
         <br><br>
