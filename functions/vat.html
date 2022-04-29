@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversion Calculator</title>
+        <link rel="stylesheet" href="../css/style.css">
+    
+    </head>
+    
+    <body>
+        
+        <h1 id="title">
+            VAT Calculator
+        </h1>
+
+        <div id="app">
+            View the answer in the console
+        </div>
+
+        <!-- Start of Script -->
+        <script>
+            
+            // VAT constant:
+            const vat = 14;
+            let percentage = 100;
+            // Get user input and save to variable
+                // code here..
+            let answer = prompt("Calculate your VAT.");
+            // Perform calculation here
+            let result;// save result of calculation to answer variable.
+            result = (answer * vat) / percentage;
+            // log VAT out to consol, DOM, or alert
+            console.log("The VAT of entered amount is R" + result);
+            alert("Your VAT amount is R" + result);
+            document.getElementById("app").innerHTML = "The VAT of entered amount is R" + result;
+
+        </script>
+        <!-- End of Script -->
+        <br><br>
+        <button><a href="../index.html">Back</button>
+    </body>
+
+</html>
